@@ -6,7 +6,7 @@ OUT=/var/www/simple-web-app-mvc-dotnet
 TARGET=linux-x64
 
 cd SimpleWebAppMVC
-
+# this is a comment
 dotnet clean
 dotnet build -c ${ENV} -r ${TARGET} --no-self-contained
 dotnet publish -c ${ENV} -r ${TARGET} --no-self-contained
