@@ -11,6 +11,7 @@ RUN dotnet publish -c release -o /WebApp --no-restore
 
 # Final stage / image
 FROM mcr.microsoft.com/dotnet/aspnet:7.0
+EXPOSE 50001
 WORKDIR /WebApp
 COPY --from=build /WebApp ./
 ENTRYPOINT ["dotnet", "SimpleWebAppMVC.dll"]
