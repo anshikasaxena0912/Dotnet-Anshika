@@ -35,9 +35,9 @@ steps:
 
 - task: Docker@2
   inputs:
-    containerRegistry: 'anshikaacr'
-    repository: 'Taskdotnetanshika/dotnet'
-    command: 'build'
+    containerRegistry: 'Containerregistrydotnet1'
+    repository: 'Containerregistrydotnet/dotnet'
+    command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
 - task: PublishBuildArtifacts@1
   inputs:
