@@ -38,3 +38,10 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+
+- task: Docker@2
+  inputs:
+    containerRegistry: 'Anshika Task1'
+    repository: 'Taskdotnetanshika'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
