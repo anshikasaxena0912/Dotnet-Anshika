@@ -42,6 +42,6 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'Taskdotnetanshika'
-    repository: 'dotnet'
+    repository: 'Taskdotnetanshika/dotnet'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
